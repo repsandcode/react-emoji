@@ -1,5 +1,6 @@
 import React from "react";
-import { Category } from "./Category";
+import PropTypes from "prop-types";
+import Category from "./Category";
 
 const CategoryNavbar = ({ onCategoryClick }) => {
   const categories = [
@@ -21,6 +22,10 @@ const CategoryNavbar = ({ onCategoryClick }) => {
       ))}
     </div>
   );
+};
+
+CategoryNavbar.propTypes = {
+  onCategoryClick: PropTypes.node,
 };
 
 export default CategoryNavbar;

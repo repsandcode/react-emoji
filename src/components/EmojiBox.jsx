@@ -1,6 +1,7 @@
 import React from "react";
+import PropTypes from "prop-types";
 
-function EmojiBox(emoji ) {
+function EmojiBox({ emoji }) {
   return (
     <div className="emoji-box">
       <div
@@ -11,5 +12,9 @@ function EmojiBox(emoji ) {
     </div>
   );
 }
+
+EmojiBox.propTypes = {
+  emoji: PropTypes.node,
+};
 
 export default EmojiBox;

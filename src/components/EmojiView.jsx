@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { EmojiBox } from "./EmojiBox";
+import PropTypes from "prop-types";
+import EmojiBox from "./EmojiBox";
 
-function EmojiView(category) {
+function EmojiView({ category }) {
   const [emojis, setEmojis] = useState([]);
 
   useEffect(() => {
@@ -29,5 +30,9 @@ function EmojiView(category) {
     </div>
   );
 }
+
+EmojiView.propTypes = {
+  category: PropTypes.node,
+};
 
 export default EmojiView;

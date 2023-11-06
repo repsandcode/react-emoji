@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { CategoryNavbar } from "./components/CategoryNavbar";
-import { EmojiView } from "./components/EmojiView";
+import CategoryNavbar from "./components/CategoryNavbar";
+import EmojiView from "./components/EmojiView";
 import "./styles.css";
 
 function App() {

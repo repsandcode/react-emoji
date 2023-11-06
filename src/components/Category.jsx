@@ -1,6 +1,7 @@
 import React from "react";
+import PropTypes from 'prop-types';
 
-function Category(category, onCategoryClick) {
+function Category({category, onCategoryClick}) {
   const handleClick = () => {
     console.log("You clicked", category);
     onCategoryClick(category);
@@ -11,6 +12,11 @@ function Category(category, onCategoryClick) {
       {category}
     </div>
   );
+}
+
+Category.propTypes = {
+    category: PropTypes.node,
+    onCategoryClick: PropTypes.node,
 }
 
 export default Category;
